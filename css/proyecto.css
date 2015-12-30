@@ -1,0 +1,204 @@
+/* MAIN STYLESHEET: EVERY GUIDELINE AND MOST-USED ELEMENTS IN THIS FILE */
+
+/*
+-----------------------------------------------------------------------------
+RESET
+-----------------------------------------------------------------------------
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* This is for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clear {
+    clear:both;
+}
+
+.fix-input-right {
+    padding-right: -160px;   
+}
+
+label {
+    display:none;
+}
+
+/*
+-----------------------------------------------------------------------------
+START
+-----------------------------------------------------------------------------
+*/
+
+body {
+    background-color: rgb(237, 237, 237);
+    font-size: 16px;
+    font-weight: light;
+}
+
+.main-container {
+    overflow-x: hidden;
+}
+
+.main-menu {
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    margin-left: 0;
+    left: 0;
+    
+    background-color: rgba(4, 143,153,1);
+
+    /* DOUBLE LINE 
+    border-right: 1px solid rgba(0, 77, 89, 0.4);
+    box-shadow: -1px 0 0px rgba(255, 255, 255, 0.2) inset;
+    */
+    
+    /* INNER SHADOW */
+    box-shadow: 0px 10px 10px rgba(0, 77, 89, 0.2) inset;
+    
+}
+
+.content-container {
+
+}
+
+/*
+-----------------------------------------------------------------------------
+MAIN SIDE MENU
+-----------------------------------------------------------------------------
+*/
+
+.main-menu-buttons, .main-menu-dark {
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px -1px 0px rgba(0, 77, 89, 0.3) inset;
+    display: block; 
+    vertical-align: middle;
+       
+    background-color: rgba(4, 143,153,1);
+}
+
+.main-menu-buttons:hover {
+    background-color: rgba(0,77,89,0.2);
+}
+
+.main-menu-dark:hover {
+    background-color: rgba(18,70,80,1);   
+}
+
+.main-menu-buttons span, .main-menu-dark span, .about {
+    font-family: 'geometriamedium';
+    text-align: center;
+    font-size: 0.77em;
+    line-height: 1.2;
+    color: white;
+    width: 100%;
+    display: inline-block;
+    margin-top: 77px;
+}
+
+.main-menu-buttons-position {
+    bottom: 40px;
+    position: absolute;
+    width: 100%;
+}
+
+.logo {
+    background: rgba(0,77,89,1) url("../img/icons-white/logo.svg") no-repeat center center;
+    background-size: 100%;
+}
+
+.projects {
+    background: url("../img/icons-white/folder.svg") no-repeat center -10px;
+}
+
+.bookmarks {
+    background: url("../img/icons-white/bookmark.svg") no-repeat center -15px;
+}
+
+.following {
+    background: url("../img/icons-white/following.svg") no-repeat center -15px;
+}
+
+.map {
+    background: rgba(0,77,89,1) url("../img/icons-white/map.svg") no-repeat center -15px;
+}
+
+.about {
+    margin-top: 15px !important;
+    font-size: 0.750em;
+    color: rgba(255,255,255,1);
+    text-shadow: 0 0 0 rgba(255,255,255,0.8);
+    
+    transition: text-shadow 0.2s ease-out;
+}
+
+.about:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.8)
+}
+
+/*
+-----------------------------------------------------------------------------
+MAIN SIDE MENU
+-----------------------------------------------------------------------------
+*/
+
+.img-proyecto {
+    background: url('../img/proyecto/Proyecto-2.jpg');
+    background-size: 100%;
+    width: 91%;
+    margin-left: 9%;
+    height: 3200px;
+}
+
+
+
+
+
+

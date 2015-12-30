@@ -1,0 +1,433 @@
+/*----- GENERAL -----*/
+
+@import url('onepage-scroll.css');
+@import url('fonts.css');
+@import url('grid.css');
+
+html {
+  height: 100%;
+}
+body {
+  padding: 0;
+  position: relative;
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+}
+
+* {
+	color: #fff;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 75%;
+	margin: 0 auto;
+}
+
+/*----- MAIN NAVIGATION -----*/
+
+.main {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo-space img{
+	padding: 37px 24px;
+	background-color: #0a4f59;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 10;
+	transition: all .2s;
+}
+
+.logo-space img:hover {
+	background-color: rgba(18,70,80,1);
+}
+
+.signin a{
+	z-index: 10;
+	position: fixed;
+	text-decoration: none;
+	padding: 12px 30px;
+	background: #508d97;
+	margin-top: 30px;
+	right: 100px;
+	border-radius: 5px;
+	font-weight: bolder;
+	font-size: 1.17em;
+	font-family: 'adelle_rgbold';
+	transition: all .2s;
+}
+
+.signin a:hover{
+	background: #0a4f59;
+}
+
+/*-----  Section 1 VIDEO  -----*/
+
+.page-1 {
+	background: url('../img/landing/video_background.png') center center;
+    background-repeat: no-repeat;
+	text-align: center;
+    background-size: 100%;
+}
+
+.page-1 h1 {
+	font-size: 2.7em;
+	margin-top: 160px;
+	margin-bottom: 60px;
+	font-family: 'adelle_ltlight';
+}
+
+.play-btn {
+	background: url('../img/landing/play-btn.png') no-repeat center center;
+	width: 98px;
+	height: 97px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.page-1 h2 {
+	font-family: 'geometrialight';
+	font-size: 1.7em;
+	margin-top: 90px;
+	margin-bottom: 90px;
+}
+
+.page-1 .cont-arrow {
+	background: url('../img/landing/cont-arrow.png') no-repeat center center;
+	width: 54px;
+	height: 29px;
+	margin-left:auto;
+	margin-right:auto;
+	bottom: 0;
+	position: relative;
+}
+
+/*-----  Section 2 NIÑOS  -----*/
+
+.page-2 {
+	background: url('../img/landing/kids-bg.png') no-repeat center center;
+	text-align: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.page-2 h1 {
+	font-size: 2.2em;
+	margin-top: 160px;
+	margin-bottom: 50px;
+	font-family: 'adelle_ltlight';
+	color: #004d59;
+
+}
+
+.page-2 img {
+	width: 150px;
+	height: 150px;
+	transition: all .2s ease-in;
+}
+
+.page-2 img:hover {
+	transform:translate(0, -5px);
+}
+
+.page-2 p {
+	color: #038e99;
+	font-family: 'geometriaregular';
+	font-size: 1.3em;
+	line-height: 140%;
+}
+
+
+/*-----  Section 3 ARQS  -----*/
+
+.page-3 {
+	background: url('../img/landing/arquitecto1-bg.png') no-repeat center center;
+	text-align: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.page-3 img {
+	margin: 140px auto 0px auto;
+	display: block;
+}
+
+
+.page-3 h1 {
+	font-size: 2.4em;
+	margin-top: 70px;
+	margin-top: 250px;
+	margin-bottom: 45px;
+	font-family: 'adelle_ltlight';
+	color: #004d59;
+}
+
+.page-3 p {
+	color: #038e99;
+	font-family: 'geometriaregular';
+	font-size: 1.4em;
+	line-height: 140%;
+}
+
+
+/*-----  Section 4 ENCUENTRA  -----*/
+
+.page-4 {
+	background: url('../img/landing/encuentra-bg.png') no-repeat center center;
+    background-size: 100%;
+        background-repeat: no-repeat;
+}
+
+.page-4 h1 {
+	font-size: 2.4em;
+	margin-top: 170px;
+	margin-bottom: 10px;
+	font-family: 'adelle_rgbold';
+	color: #004d59;
+	text-align: right;
+}
+
+.page-4 h2,
+.page-4 h4 {
+	text-align: right;
+	color: #038e99;
+	font-family: 'geometriaregular';
+}
+
+.page-4 h2 {
+	font-size: 1.3em;
+}
+
+.page-4 h4 {
+	font-size: 1.1em;
+	line-height: 140%;
+}
+
+.page-4 p {
+	color: #737373;
+	font-family: 'geometriaregular';
+	line-height: 140%;
+	text-align: right;
+}
+
+/*-----  Section 5 COLECCIONA  -----*/
+
+.page-5 {
+	background: url('../img/landing/colecciona-bg.png') no-repeat center 25%;
+    background-size: 100%;
+        background-repeat: no-repeat;
+}
+
+.page-5 h1 {
+	font-size: 2.4em;
+	margin-top: 170px;
+	margin-bottom: 10px;
+	font-family: 'adelle_rgbold';
+	color: #004d59;
+	
+}
+
+.page-5 h2,
+.page-5 h4 {
+	color: #038e99;
+	font-family: 'geometriaregular';
+}
+
+.page-5 h2 {
+	font-size: 1.3em;
+}
+
+.page-5 h4 {
+	font-size: 1.1em;
+	line-height: 140%;
+}
+
+.page-5 p {
+	color: #737373;
+	font-family: 'geometriaregular';
+	line-height: 140%;
+	margin-bottom: 10px;
+}
+
+.page-5 p span {
+	color: #737373;
+	font-family: 'geometriamedium';
+	font-size: 1.1em;
+	line-height: 140%;
+}
+
+
+/*-----  Section 6 INSPIRATE  -----*/
+
+.page-6 {
+	background: url('../img/landing/inspirate-bg.png') no-repeat center center;
+    background-size: 100%;
+        background-repeat: no-repeat;
+}
+
+.page-6 h1 {
+	font-size: 2.4em;
+	margin-top: 170px;
+	margin-bottom: 10px;
+	font-family: 'adelle_rgbold';
+	color: #004d59;
+	text-align: right;
+}
+
+.page-6 h2,
+.page-6 h4 {
+	text-align: right;
+	color: #038e99;
+	font-family: 'geometriaregular';
+}
+
+.page-6 h2 {
+	font-size: 1.3em;
+}
+
+.page-6 h4 {
+	font-size: 1.1em;
+	line-height: 140%;
+}
+
+.page-6 p {
+	color: #737373;
+	font-family: 'geometriaregular';
+	line-height: 140%;
+	text-align: right;
+}
+
+
+/*-----  Section 7 CLOSING  -----*/
+
+.page-7 {
+	background: url('../img/landing/closing-bg.png') no-repeat center center;
+	text-align: center;
+    background-size: 100%;
+        background-repeat: no-repeat;
+
+}
+
+.page-7 img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 180px;
+}
+
+.page-7 h1 {
+	font-size: 2.4em;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	font-family: 'adelle_ltlight';
+	color: #004d59;
+	line-height: 140%;
+	text-align: center;
+}
+
+.page-7 .signin-end a{
+	text-decoration: none;
+	padding: 12px 30px;
+	background: #508d97;
+	right: 100px;
+	border-radius: 5px;
+	font-weight: bolder;
+	font-size: 1.17em;
+	font-family: 'adelle_rgbold';
+	transition: all .2s;
+}
+
+.signin-end a:hover{
+	background: #0a4f59;
+}
+.explore-link {
+	margin-top: 50px;
+}
+
+.explore-link a {
+	text-decoration: none;
+	font-family: 'adelle_rgregular';
+	font-size: 1.1em;
+	color: #959494;
+	transition: all .2s;
+	text-align: center;
+}
+
+.explore-link a:hover {
+	color: #ffb01a;
+}
+
+/*-----  Section 6 INSPIRATE  -----*/
+
+.footer {
+	width: 100%;
+	height: 45px;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	background: #028e99;
+}
+
+.footer ul li{
+	list-style-type: none;
+	display: inline-block;
+	float: left;
+	margin-right: 15px;	
+	height: 20px;
+}
+
+.footer ul li a {
+	text-decoration: none;
+	font-size: .73em;
+	font-family: 'geometriaregular';
+}
+
+.footer ul li a:hover {
+	text-decoration: underline;
+}
+
+.footer .social {
+	float: left;
+}
+
+.footer .social img {
+	display: inline-block;
+	margin: 0;
+	margin-left: 10px;
+}
+
+.footer p {
+	float: right;
+	font-size: .73em;
+	text-align: center;
+	font-family: 'geometriaregular';
+	margin: 0;
+}
+/*-----  PAGINATION BTNS  -----*/
+
+.onepage-pagination li a.active:before {
+	border-color: #0a4f59;
+}
+
+.onepage-pagination li a:before {
+	background: #0a4f59;
+}
+
+/*-----  SIGN IN BOX  -----*/
+
+
+
+.signin-box img{
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 9999;
+
+}
+

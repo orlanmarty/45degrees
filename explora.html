@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>: Explora</title>
+	
+    <!-- META -->
+    <meta name="description" content="45º: Una colección de ideas para inspirar otras.">
+    <meta name="viewport" content="width = device-width">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- STYLESHEETS -->
+	<link rel="stylesheet" href="css/container_5.css" media="screen and (max-width:768px)" type="text/css">
+    <link rel="stylesheet" href="css/container_7.css" media="screen and (min-width:769px)" type="text/css">
+    <link rel="stylesheet" href="css/container_9.css" media="screen and (min-width:1260px)" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    
+    <!-- JAVASCRIPT -->
+    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+	<script src="js/prefixfree.min.js" type="text/javascript"></script>
+    <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/interactions.js" type="text/javascript"></script>
+
+    <!-- LIL' SCRIPTS -->
+    <script>
+    $(document).ready(function(event){ 
+    
+    });    
+    </script>
+    
+</head>
+<body>
+    <div id="body" class="main-container container_5 container_7 container_9">
+    <!-- MAIN SIDE-MENU -->
+        <div class="main-menu grid_1_a grid_1_b grid_1_c">
+            <a class="main-menu-dark logo transition-background" href="explora.html" alt="45º Logo">
+            </a>
+            <a class="main-menu-buttons filters transition-background" alt="Filtros de búsqueda" href="#">
+                <span>
+                    Filtros
+                </span>
+            </a> 
+            <a class="main-menu-buttons latest-search transition-background" alt="Últimas búsquedas" href="#">
+                <span>
+                    Recientes
+                </span>
+            </a>
+            <div class="main-menu-buttons-position transition-background">
+                <a class="main-menu-dark map" alt="Navegación por mapa" href="#">
+                    <span>
+                        Mapa
+                    </span>
+                </a>
+                <a class="about" href="#">
+                    Sobre 45º
+                </a>
+            </div>
+        </div>
+    <!-- TOOLBAR TOP -->
+        <div class="search-box grid_7_a grid_5_b grid_3_c push_1_a push_1_b push_1_c">
+            <form action="" method="post">
+                <label for="buscar">Buscar en 45ª</label>
+                <input type="text" name="buscar" placeholder="Buscar..." required="true"/>
+            </form>
+            <div class="applied-filters">
+                <span></span>
+                <ul>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="user-tools grid_1_a grid_1_b grid_1_c push_8_a push_6_b push_4_c">
+            <a href="perfil.html" class="profile-picture transition-background">
+            </a>            
+            <a href="#" class="notifications transition-background">
+            </a>           
+        </div>
+        <div class="clear"></div>
+        
+        <!-- FILTERS -->
+        <div class="filters-explore grid_2_a grid_2_b grid_2_c push_1_a push_1_b push_1_c animated">
+            <div class="tab-expandibles">
+            </div>
+            <div id="accordion">
+                <h3>
+                    Tipo de post
+                </h3>
+                <form>
+                    <input type="checkbox" name="tipoproyecto" value="obranueva"><label>Obra nueva</label>
+                    <br>
+                    <input type="checkbox" name="tipoproyecto" value="remodelacion"><label>Remodelación</label>
+                    <br>
+                    <input type="checkbox" name="tipoproyecto" value="ampliacion"><label>Ampliación</label>              
+                </form>
+                <h3>
+                    Espacio urbano
+                </h3>
+                <form>
+                    <input type="checkbox" name="espaciourbano" value="parqueurbano"> <label>Parque urbano</label>
+                    <br>
+                    <input type="checkbox" name="espaciourbano" value="plazadura"> <label>Plaza dura</label>
+                    <br>
+                    <input type="checkbox" name="espaciourbano" value="calle"> <label>Calle</label>
+                    <br>
+                    <input type="checkbox" name="espaciourbano" value="callepeatonal"> <label>Calle peatonal</label>
+                    <br>
+                    <input type="checkbox" name="espaciourbano" value="paseomaritimo"> <label>Paseo marítimo</label>
+                    <br>
+                    <input type="checkbox" name="espaciourbano" value="espaciopublicopeatonal"> <label>Espacio público natural</label>              
+                </form>
+                <h3>
+                    Uso del espacio urbano
+                </h3>
+                <form>
+                    <input type="checkbox" name="uso" value="familiar"> <label>Familiar</label>
+                    <br>
+                    <input type="checkbox" name="uso" value="juegoinfantil"> <label>Juego infantil</label>
+                    <br>
+                    <input type="checkbox" name="uso" value="calle"> <label>Cultural</label>
+                    <br>
+                    <input type="checkbox" name="uso" value="entretenimiento"> <label>Entretenimiento</label>      
+                </form>
+                <h3>
+                    Elementos del esp. urb.
+                </h3>
+                <form>
+                    <input type="checkbox" name="elementosurbano" value="residuos"> <label>Residuos</label>
+                    <br>
+                    <input type="checkbox" name="elementosurbano" value="bancos"> <label>Bancos</label>
+                    <br>
+                    <input type="checkbox" name="elementosurbano" value="miradores"> <label>Miradores</label>
+                    <br>
+                    <input type="checkbox" name="elementosurbano" value="zonainfantil"> <label>Zona Infantil</label>
+                    <br>
+                    <input type="checkbox" name="elementosurbano" value="zonasdesombra"> <label>Zonas de sombra</label>
+                    <br>
+                    <input type="checkbox" name="elementosurbano" value="elementosdecoracion"> <label>Elementos de decoración</label>
+                    <br>
+                    <input type="checkbox" name="elementosurbano" value="iluminacion"> <label>Iluminación</label>                 
+                </form>
+                <h3>
+                    Formato del contenido
+                </h3>
+                <form class="formatos-contenido">
+                    <input class="content-checkbox-image" type="checkbox" name="formatocontenido" value="imagen" checked> <label>Imagen</label>  
+                    <br>
+                    <input class="content-checkbox-video " type="checkbox" name="formatocontenido" value="video"checked> <label>Video</label>  
+                    <br>
+                    <input class="content-checkbox-audio" type="checkbox" name="formatocontenido" value="audio"> <label>Audio</label>  
+                    <br>
+                    <input class="content-checkbox-text" type="checkbox" name="formatocontenido" value="texto" checked> <label>Texto</label>        
+                </form>                
+            </div>
+            <a class="button button-wide btn-green transition-background">
+                Guardar búsquedas
+            </a>
+            <a class="button button-wide btn-gray-orange transition-color">
+                Restablecer valores
+            </a>            
+        </div>
+        
+       <!-- RECENT -->
+        <div class="recents-explore grid_2_a grid_2_b grid_2_c push_1_a push_1_b push_1_c animated">
+            <div class="tab-expandibles-recientes">
+            </div>
+            <div id="accordion-2">
+                <h3>
+                    Mirador
+                </h3>
+                <div class="recent">
+                    <h4>
+                        Categorías
+                    </h4>
+                    <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Ampliación
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    calle
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    familiar
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    zona infantil
+                                </h5>
+                            </li>                   
+                    </ul>
+                    <h4>
+                        Tags
+                    </h4>
+                    <ul class="tags-small-list">
+                        <li>
+                            familia
+                        </li>
+                        <li>
+                            creatividad
+                        </li>
+                        <li>
+                            juegos
+                        </li>
+                    </ul>
+                </div>
+                
+                <h3>
+                    Mobiliario
+                </h3>
+                <div class="recent">
+                    <h4>
+                        Categorías
+                    </h4>
+                    <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Remodelación
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    calle peatonal
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    cultural
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    zona infantil
+                                </h5>
+                            </li>                   
+                    </ul>
+                    <h4>
+                        Tags
+                    </h4>
+                    <ul class="tags-small-list">
+                        <li>
+                            paseo
+                        </li>
+                        <li>
+                            actividades
+                        </li>
+                    </ul>
+                </div>
+                
+                <h3>
+                    Biblioteca
+                </h3>
+                <div class="recent">
+                    <h4>
+                        Categorías
+                    </h4>
+                    <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Ampliación
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    calle
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    cultural
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    zonas de sombra
+                                </h5>
+                            </li>                   
+                    </ul>
+                    <h4>
+                        Tags
+                    </h4>
+                    <ul class="tags-small-list">
+                        <li>
+                            estudio
+                        </li>
+                        <li>
+                            concentración
+                        </li>
+                        <li>
+                            silencio
+                        </li>
+                        <li>
+                            calma
+                        </li>  
+                        <li>
+                            lectura
+                        </li>                          
+                    </ul>
+                </div>                
+            </div>
+            <a class="button button-wide btn-green transition-background">
+                Búsquedas anteriores
+            </a>
+        </div>    
+        
+        <!-- PROJECT BOX EXPLORE -->
+        <div style="overflow:hidden; margin-top: 100px;">
+            <div id="container" class="js-masonry push_1_a push_1_b push_1_c" data-masonry-options='{ "itemSelector": ".project-box-explore" }'>
+                <!-- BOX 1 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-image"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>18</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>4</p>
+                            </li>   
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>                        
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/1.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            Súper telaraña en la indutrial outdoor market
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Remodelación
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    parque
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    familia
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    cultural
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    zona de juego
+                                </h5>
+                            </li>                    
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- BOX 2 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-video"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>3</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>1</p>
+                            </li>   
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/2.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            Estructuras inspiradas en la naturaleza
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Obra nueva
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    entretenimiento
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    plaza
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    elemento de decoración
+                                </h5>
+                            </li>                    
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- BOX 3 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-video"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>17</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>12</p>
+                            </li>    
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/10.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            Cómo construir espacios imaginarios juntos
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Obra nueva
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    parque urbano
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    juego infantil
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    zona infantil
+                                </h5>
+                            </li>                               
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- BOX 4 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-audio"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>8</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>5</p>
+                            </li>   
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/4.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            ¡Queremos jugar en la calle!
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Ampliación
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    calle
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    familiar
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    zona infantil
+                                </h5>
+                            </li>                   
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div> 
+                <!-- BOX 5 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-text"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>10</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>7</p>
+                            </li>   
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/5.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            Una nueva calle pensada para los niños
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Remodelación
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    parque
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    familiar
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    cultural
+                                </h5>
+                            </li>                     
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- BOX 6 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-image"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>9</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>5</p>
+                            </li>    
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/6.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            Nueva visión de Plaza Catalunya
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Obra nueva
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    entretenimiento
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    plaza
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    elemento de decoración
+                                </h5>
+                            </li>                   
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>                  
+                <!-- BOX 7 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-image"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>8</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>4</p>
+                            </li>    
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/7.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            Conociendo a los vecinos
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Familiar
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    Entretenimiento
+                                </h5>
+                            </li>                  
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- BOX 8 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-audio"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>10</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>1</p>
+                            </li>   
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/8.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            Espacios donde divertirnos
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Ampliación
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    calle
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    familiar
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    zona infantil
+                                </h5>
+                            </li>                   
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div> 
+                <!-- BOX 9 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-text"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>8</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>5</p>
+                            </li>   
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/9.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            Objetos interactivos
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Entretenimiento
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    parque
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    zona infantil
+                                </h5>
+                            </li>                  
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+               <!-- BOX 10 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-image"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>18</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>4</p>
+                            </li>   
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/1.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            Súper telaraña en la indutrial outdoor market
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Remodelación
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    parque
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    familia
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    cultural
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    zona de juego
+                                </h5>
+                            </li>                    
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- BOX 11 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-video"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>3</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>1</p>
+                            </li>   
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/2.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            Estructuras inspiradas en la naturaleza
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Obra nueva
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    entretenimiento
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    plaza
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    elemento de decoración
+                                </h5>
+                            </li>                    
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- BOX 12 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-video"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>17</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>12</p>
+                            </li>    
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/3.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            Imaginando el parque perfecto
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Obra nueva
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    parque
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    familiar
+                                </h5>
+                            </li>                   
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- BOX 13 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-audio"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>8</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>5</p>
+                            </li>   
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/4.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            ¡Queremos jugar en la calle!
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Ampliación
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    calle
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    familiar
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    zona infantil
+                                </h5>
+                            </li>                   
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div> 
+                <!-- BOX 14 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-text"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>10</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>7</p>
+                            </li>   
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/5.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            Una nueva calle pensada para los niños
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Remodelación
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    parque
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    familiar
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    cultural
+                                </h5>
+                            </li>                     
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- BOX 15 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-image"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>9</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>5</p>
+                            </li>    
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/6.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            Nueva visión de Plaza Catalunya
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Obra nueva
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    entretenimiento
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    plaza
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    elemento de decoración
+                                </h5>
+                            </li>                   
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>                  
+                <!-- BOX 16 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-image"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>8</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>4</p>
+                            </li>    
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/7.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            Conociendo a los vecinos
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Familiar
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    Entretenimiento
+                                </h5>
+                            </li>                  
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!-- BOX 17 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-audio"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>10</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>1</p>
+                            </li>   
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/8.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            Espacios donde divertirnos
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Ampliación
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    calle
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    familiar
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    zona infantil
+                                </h5>
+                            </li>                   
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div> 
+                <!-- BOX 18 -->
+                <div class="project-box-explore grid_2_a grid_2_b grid_2_c">
+                    <div class="content-color content-text"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>8</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>5</p>
+                            </li>   
+                        </ul>
+                        <div class="box-hover">
+                            <div></div>
+                        </div>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/9.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            Objetos interactivos
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Entretenimiento
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    parque
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    zona infantil
+                                </h5>
+                            </li>                  
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>                 
+            </div>
+        </div>
+    </div>
+    <!-- PREVIEW LIGTHBOX -->
+    <div id="popup" class="white-screen container_5 container_7 container_9" style="display: none;">
+                <div class="project-box-explore project-box-explore-preview grid_3_a grid_3_b grid_3_c animated">
+                    <div class="content-color content-text"></div>
+                    <div class="project-box-explore-image">
+                        <ul class="counter-project-box-explore">
+                            <li>
+                                <span class="love-count"></span>
+                                <p>17</p>
+                            </li>
+                            <li>
+                                <span class="collected-count"></span>
+                                <p>12</p>
+                            </li>   
+                        </ul>
+                        <div class="image-filters"></div>
+                        <img alt="Imagen del proyecto" src="img/projects/10.jpg">
+                    </div>
+                    <div class="project-box-explore-title">
+                        <h2>
+                            Cómo construir espacios imaginarios juntos
+                        </h2>
+                        <ul class="categories-project-box-explore">
+                            <li>
+                                <h5>
+                                    Obra nueva
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    parque urbano
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    juego infantil
+                                </h5>
+                            </li>
+                            <li>
+                                <h5>
+                                    zona infantil
+                                </h5>
+                            </li>                             
+                        </ul>
+                        <p>
+                            Todos vamos dejando nuestros hilos allá por donde pasamos. Conectamos con personas, con lugares. Tejemos redes nos enredamos y encontramos nudos…
+                        </p>
+                        <a href="post.html" target="_self" class="watch-project btn-green button button-wide transition-background">
+                            Ver proyecto
+                        </a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="love button btn-green push_6_a push_5_b push_4_c">
+                </div>
+                <div class="add-project button btn-green push_6_a push_5_b push_4_c">
+                </div>
+            <a class="close transition-background push_5_c">
+            </a>
+    </div>
+    
+    <!-- SEARCH LIGHTBOX -->
+    <div id="search-popup" class="white-screen container_5 container_7 container_9" style="display: none;">
+        <div class="search-icon grid_1_a grid_1_b grid_1_c push_1_a"></div>
+        <div class="search-lightbox grid_6_a grid_4_b grid_2_c push_1_a">
+            <form action="" method="post">
+                <label for="buscar">Buscar en 45ª</label>
+                <input type="text" name="buscar" placeholder="Buscar..." required="true"/>
+            </form>
+            <div class="search-recents tags">
+                <ul>
+                    <li>
+                        compañeros
+                        <a hef="#"></a>
+                    </li>
+                    <li>
+                        ejercicio
+                        <a hef="#"></a>
+                    </li>
+                    <li>
+                        observación
+                        <a hef="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-suggestions tags">
+                <ul>
+                    <li>
+                        amigos
+                    </li>
+                    <li>
+                        misión
+                    </li>
+                    <li>
+                        fotografía
+                    </li>
+                    <li>
+                        diversión
+                    </li>
+                    <li>
+                        creatividad
+                    </li>
+                    <li>
+                        pintar
+                    </li> 
+                    <li>
+                        Arquitectura
+                    </li>   
+                    <li>
+                        +
+                    </li>
+                </ul>
+            </div>
+            <a href="" class="button btn-green grid_1_a grid_1_b grid_1_c">
+                ¡hecho!
+            </a>
+        </div>
+        <a class="close transition-background">
+        </a>
+    </div>    
+    </body>
+</html>    

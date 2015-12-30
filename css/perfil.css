@@ -1,0 +1,716 @@
+/* MAIN STYLESHEET: EVERY GUIDELINE AND MOST-USED ELEMENTS IN THIS FILE */
+
+/*
+-----------------------------------------------------------------------------
+RESET
+-----------------------------------------------------------------------------
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* This is for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clear {
+    clear:both;
+}
+
+.fix-input-right {
+    padding-right: -160px;   
+}
+
+label {
+    display:none;
+}
+
+/* SCROLL SLIM */
+
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+::-webkit-scrollbar-button {
+
+}
+::-webkit-scrollbar-track {
+	background:rgba(223,223,223,1);
+	border-radius:8px;
+}
+::-webkit-scrollbar-thumb {
+	background:rgba(0,142,153,0.8);
+    border:1px solid rgba(0,142,153,1);
+	border-radius:8px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background:rgba(0,142,153,1);
+}	
+
+/*
+-----------------------------------------------------------------------------
+START
+-----------------------------------------------------------------------------
+*/
+
+body {
+    background-color: rgb(237, 237, 237);
+    font-size: 16px;
+    font-weight: light;
+}
+
+.main-container {
+    overflow-x: hidden;
+}
+
+.main-menu {
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    margin-left: 0;
+    left: 0;
+    
+    background-color: rgba(4, 143,153,1);
+
+    /* DOUBLE LINE 
+    border-right: 1px solid rgba(0, 77, 89, 0.4);
+    box-shadow: -1px 0 0px rgba(255, 255, 255, 0.2) inset;
+    */
+    
+    /* INNER SHADOW */
+    box-shadow: 0px 10px 10px rgba(0, 77, 89, 0.2) inset;
+    
+}
+
+.content-container {
+
+}
+
+/*
+-----------------------------------------------------------------------------
+MAIN SIDE MENU
+-----------------------------------------------------------------------------
+*/
+
+.main-menu-buttons, .main-menu-dark {
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px -1px 0px rgba(0, 77, 89, 0.3) inset;
+    display: block; 
+    vertical-align: middle;
+       
+    background-color: rgba(4, 143,153,1);
+}
+
+.main-menu-buttons:hover {
+    background-color: rgba(0,77,89,0.2);
+}
+
+.main-menu-dark:hover {
+    background-color: rgba(18,70,80,1);   
+}
+
+.main-menu-buttons span, .main-menu-dark span, .about {
+    font-family: 'geometriamedium';
+    text-align: center;
+    font-size: 0.77em;
+    line-height: 1.2;
+    color: white;
+    width: 100%;
+    display: inline-block;
+    margin-top: 77px;
+}
+
+.main-menu-buttons-position {
+    bottom: 40px;
+    position: absolute;
+    width: 100%;
+}
+
+.logo {
+    background: rgba(0,77,89,1) url("../img/icons-white/logo.svg") no-repeat center center;
+    background-size: 100%;
+}
+
+.projects {
+    background: url("../img/icons-white/folder.svg") no-repeat center -10px;
+}
+
+.bookmarks {
+    background: url("../img/icons-white/bookmark.svg") no-repeat center -15px;
+}
+
+.following {
+    background: url("../img/icons-white/following.svg") no-repeat center -15px;
+}
+
+.map {
+    background: rgba(0,77,89,1) url("../img/icons-white/map.svg") no-repeat center -15px;
+}
+
+.about {
+    margin-top: 15px !important;
+    font-size: 0.750em;
+    color: rgba(255,255,255,1);
+    text-shadow: 0 0 0 rgba(255,255,255,0.8);
+    
+    transition: text-shadow 0.2s ease-out;
+}
+
+.about:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.8)
+}
+
+/*
+-----------------------------------------------------------------------------
+PROFILE INFO HEADER
+-----------------------------------------------------------------------------
+*/
+
+.header-profile {
+    background: url('../img/perfil/profile-bg-2.png') no-repeat center center;
+    background-size: 100%;
+    width: 100%;
+    color: #fff;
+}
+
+.arq-info {
+    padding-left: 30px;
+}
+
+.header-profile h2{
+    margin-top: 60px;
+    font-family: 'adelle_rgbold';
+    font-size: 1.7em;
+}
+
+.header-profile p {
+    margin-top: 20px;
+    font-family: 'adelle_ltlight';
+    font-size: 1.2em;
+    line-height: 135%;
+}
+
+.header-profile ul li {
+    display: inline-block;
+    margin-top: 23px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    opacity: .6;
+    transition: all .2s ease-in;
+}
+
+.header-profile ul li:hover {
+    opacity: 1;
+}
+
+.profile-img {
+    background: url('../img/perfil/profile-photo.png') no-repeat center;
+    width: 244px;
+    height: 239px;
+    border-radius: 50%;
+}
+
+.follow-info {
+padding-left: 20px;
+}
+
+.follow-info h4 {
+    margin-top: 60px;
+    font-family: 'adelle_rgbold';
+    font-size: 1.4em;
+}
+
+.follow-info h5 {
+    margin-top: 98px;
+    font-family: 'adelle_ltlight';
+}
+
+.notifications, .settings {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255,255,255,0.6) !important;
+    float: left;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.notifications:hover, .settings:hover {
+    background-color: rgba(255,255,255,0.9) !important;
+}
+.settings {
+    background: url("../img/icons-dark/settings.svg") no-repeat center center;
+    background-size: 450%;
+}
+
+.settings:hover {
+    background: url("../img/icons-green/settings.svg") no-repeat center center;
+    background-size: 450%;
+}
+
+.notifications {
+    background: url("../img/icons-dark/notifications.svg") no-repeat center center;
+    background-size: 160%;
+}
+
+.notifications:hover {
+    background: url("../img/icons-green/notifications.svg") no-repeat center center;
+    background-size: 160%;
+}
+
+
+/*
+-----------------------------------------------------------------------------
+TITLE
+-----------------------------------------------------------------------------
+*/
+
+
+.title-bg {
+    background: #fff;
+    height: 120px;
+    width: 100%;
+}
+
+.title-bg h1{
+    font-family: 'adelle_ebextrabold';
+    font-size: 2.2em;
+    line-height: 120px;
+    padding-left: 20px;
+    color: #194e59;
+}
+
+/*
+-----------------------------------------------------------------------------
+PROJECT TITLE & EDIT
+-----------------------------------------------------------------------------
+*/
+
+.project-id {
+    height: 100px;
+}
+
+.project-id h2 {
+   font-family: 'geometriabold';
+   text-transform: uppercase;
+   color: rgba(4, 143,153,1);
+   font-size: 1.1em;
+   margin-top: 44px;
+   padding-left: 30px;
+}
+
+.add-project {
+    background-color: rgba(4, 143,153,1);
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px; 
+    transition: all .2s ease-in;
+}
+
+.add-project p {
+    float: left;
+}
+
+.add-project p:before {
+    content: url('../img/icons-white/folder.svg');
+}
+
+.edit-tools {
+    float: left;
+}
+
+.edit-tools p:before{
+    content: url('../img/perfil/lapiz-icon.png');
+    background:  no-repeat;
+    margin-right: 10px;
+}
+
+.edit-tools-2 a{
+    background-color: rgba(4, 143,153,1);
+    color: #fff;
+    font-family: 'adelle_rgbold';
+    float: left;
+    padding: 0px 10px;
+    margin-top: 30px; 
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    transition: all .2s ease-out;
+}
+
+.edit-tools-2 a:hover {
+    background: rgba(0,77,89,1);
+}
+
+.edit-tools-2 a:after{
+    background-image: url('../img/icons-white/folder.svg');
+    content: "";
+    background-size: 170%;
+    background-position: -13px -17px;
+    width: 43px;
+    height: 43px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.project-id  p {
+    background-color: rgba(4, 143,153,1);
+    border-radius: 5px;
+    padding: 12px 20px 12px 20px;
+    float: left;
+    color: #fff;
+    font-size: 1.15em;
+    font-family: 'adelle_rgbold';
+    margin-top: 30px;
+    transition: all .2s ease-in;
+}
+
+.add-project:hover,
+.project-id p:hover {
+    background-color: rgba(0,77,89,1);
+}
+
+/*
+-----------------------------------------------------------------------------
+PROJECTS SECTION
+-----------------------------------------------------------------------------
+*/
+
+.project-section {
+    margin-left: 30px;
+    margin-right: 57px;
+}
+
+.project-box {
+    width: 280px;
+    height: 280px;
+    background-color: #000;
+    display: inline-block;
+    margin-right: 110px;
+    margin-bottom: 50px;
+
+}
+
+.project-box .mobiliario-img,
+.project-box .estructura-img,
+.project-box .plaza-img,
+.project-box .peatonal-img {
+    width: 100%;
+    height: 280px;
+    transition:all .2s ease-in;
+}
+
+.project-box .mobiliario-img:hover,
+.project-box .estructura-img:hover,
+.project-box .plaza-img:hover,
+.project-box .peatonal-img:hover {
+    opacity: .7;
+}
+
+.project-box:last-of-type{
+    margin-right: 0;
+}
+
+.notifications-circle {
+    background-color: rgba(255,169,0,1);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    color: #fff;
+    padding: 11px;
+    border-radius: 25px;
+    text-align: center;
+    font-family: 'geometriabold';
+    font-size: 1.15em;
+    z-index: 100;
+    left: 440px;
+    top: 440px;
+    -webkit-box-shadow: 0px 3px 29px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 29px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 29px -10px rgba(0,0,0,0.75);
+}
+
+.project-box .mobiliario-img {
+    background: url('../img/perfil/mobiliario.png') no-repeat center;
+}
+
+.project-box .estructura-img {
+    background: url('../img/perfil/estructuras.png') no-repeat center;
+}
+
+.project-box a .estructura-img p:after{
+    background: url('../img/perfil/lock-icon.png') no-repeat center;
+    width: 15px;
+    height: 20px;
+    display: block;
+}
+
+.project-box .lock-icon {
+
+}
+
+.project-box .plaza-img {
+    background: url('../img/perfil/plaza.png') no-repeat center;
+}
+
+.estructura p:after {
+    background: url('../img/perfil/lock.png') no-repeat;
+    content: "";
+    width: 14px;
+    height: 20px;
+    display: inline-block;
+    float: right;
+}
+
+.project-box p {
+    text-align: center;
+    margin-top: 20px;
+    color: #4c4c4e;
+    font-family: 'adelle_rgbold';
+    clear: both;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*
+.project-box p:hover {
+    color: rgba(4, 143,153,1);
+}*/
+
+.project-box p:hover {
+    text-decoration: underline;
+}
+
+.project-section hr {
+    border: solid 1px #d7d7d7;
+    margin-right: 75px;
+    margin-top:20px;
+ }
+
+.finished-project-id h2 {
+   font-family: 'geometriabold';
+   text-transform: uppercase;
+   color: rgba(4, 143,153,1);
+   font-size: 1.1em;
+   margin-top: 25px;
+   margin-bottom: 35px;
+   padding-left: 30px;
+}
+
+.project-box .peatonal-img {
+    background: url('../img/perfil/peatonal.png') no-repeat center;
+}
+
+/*
+-----------------------------------------------------------------------------
+PROJECTS SECTION
+-----------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 1000px){
+    .header-profile h2{
+    margin-top: 60px;
+    font-family: 'adelle_rgbold';
+    font-size: 1.3em;
+}
+
+.header-profile p {
+    margin-top: 20px;
+    font-family: 'adelle_ltlight';
+    font-size: 1em;
+    line-height: 135%;
+}
+
+.header-profile ul li {
+    display: inline-block;
+    margin-top: 23px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    opacity: .6;
+    transition: all .2s ease-in;
+}
+
+.header-profile ul li:hover {
+    opacity: 1;
+}
+
+.profile-img {
+    background: url('../img/perfil/profile-photo.png') no-repeat center;
+    width: 244px;
+    height: 239px;
+    border-radius: 50%;
+}
+
+.follow-info {
+padding-left: 20px;
+}
+
+.follow-info h4 {
+    margin-top: 60px;
+    font-family: 'adelle_rgbold';
+    font-size: 1.1em;
+}
+
+.follow-info h5 {
+    margin-top: 110px;
+    font-family: 'adelle_ltlight';
+    font-size: .8em;
+}
+
+.notifications, .settings {
+    width: 38px;
+    height: 38px;
+    background-color: rgba(255,255,255,0.6) !important;
+    float: left;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+}
+
+
+/*
+-----------------------------------------------------------------------------
+MEDIAQUERIES
+-----------------------------------------------------------------------------
+*/
+
+
+@media only screen and (min-width:769px) and (max-width: 1024px){
+    .header-profile h2{
+        margin-top: 60px;
+        font-family: 'adelle_rgbold';
+        font-size: 1.3em;
+    }
+
+    .follow-info {
+        padding-left: 0;
+    }
+
+    .header-profile p {
+        margin-top: 15px;
+        font-family: 'adelle_ltlight';
+        font-size: 1em;
+        line-height: 135%;
+    }
+
+    .profile-img {
+        background: url('../img/perfil/profile-photo.png') no-repeat center;
+        width: 234px;
+        height: 229px;
+        border-radius: 50%;
+    }
+
+    .follow-info h4 {
+        margin-top: 60px;
+        font-family: 'adelle_rgbold';
+        font-size: 1em;
+        margin-left: 0;
+    }
+
+    .follow-info h5 {
+        display: none;
+    }
+    
+    .project-box {
+        margin-right: 15px;
+    }
+
+}
+
+@media only screen and (min-width:769px) and (max-width: 860px){
+    .follow-info h4 {
+        visibility: hidden;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    .header-profile h2{
+        margin-top: 60px;
+        font-family: 'adelle_rgbold';
+        font-size: 1.2em;
+    }
+
+    .follow-info {
+        padding-left: 0;
+    }
+
+    .header-profile p {
+        margin-top: 15px;
+        font-family: 'adelle_ltlight';
+        font-size: .8em;
+        line-height: 135%;
+    }
+
+    .profile-img {
+        margin-left: 20px;
+    }
+
+    .title-bg h1{
+        padding-left: 40px;
+    }
+
+    .follow-info h4 {
+        display: none;
+    }
+    
+    .follow-info h5 {
+        display: none;
+    }
+
+    .header-profile ul li {
+        display: none;
+    }
+
+
+}
+
+
+
+

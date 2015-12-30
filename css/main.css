@@ -1,0 +1,1065 @@
+/* MAIN STYLESHEET: EVERY GUIDELINE AND MOST-USED ELEMENTS IN THIS FILE */
+
+/*
+-----------------------------------------------------------------------------
+RESET
+-----------------------------------------------------------------------------
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    resize: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* This is for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, textarea {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clear {
+    clear:both;
+}
+
+.fix-input-right {
+    padding-right: -160px;   
+}
+
+label {
+    display:none;
+}
+
+/* PLACEHOLDERS */
+
+::-webkit-input-placeholder { color:rgba(149,149,149,0.6); }
+:-moz-placeholder { /* Firefox 18- */ color:rgba(149,149,149,0.6); }
+::-moz-placeholder {  /* Firefox 19+ */ color:rgba(149,149,149,0.6); }
+:-ms-input-placeholder { color:rgba(149,149,149,0.6); }
+
+/* INPUT CHECKBOX */
+
+input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    padding: 3px;
+    border:4px double rgba(76,76,76,1);
+    background-color: white;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ie-appearance: none;
+    vertical-align: middle;
+    cursor: pointer;
+    margin:0;
+}
+
+input[type=checkbox]:checked {
+    border: 5px double white;
+    background-color: rgba(76,76,76,1);
+    width: 22px;
+    height: 22px;
+    font-family: 'geometriabold';
+    margin:-2px;
+}
+
+/* INPUT FOCUS */
+
+input:focus,
+select:focus,
+button:focus,
+h3:focus {
+    outline: none;
+}
+
+/* SCROLL SLIM */
+
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+::-webkit-scrollbar-button {
+
+}
+::-webkit-scrollbar-track {
+	background:rgba(223,223,223,1);
+	border-radius:8px;
+}
+::-webkit-scrollbar-thumb {
+	background:rgba(0,142,153,0.8);
+    border:1px solid rgba(0,142,153,1);
+	border-radius:8px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background:rgba(0,142,153,1);
+}			
+
+/* TRANSITIONS */
+
+.transition-background {
+    transition: background-color 0.2s ease-out;   
+}
+
+.transition-color {
+    transition: color 0.2s ease-out;   
+}
+
+/*
+-----------------------------------------------------------------------------
+START
+-----------------------------------------------------------------------------
+*/
+
+body {
+    background-color: rgb(237, 237, 237);
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.main-container {
+    overflow-x: hidden;
+    padding-bottom: 150px;
+}
+
+.main-menu {
+    height: 100%;
+    position: fixed;
+    z-index: 9996;
+    margin-left: 0;
+    left: 0;
+    
+    background-color: rgba(4, 143,153,1);
+
+    /* DOUBLE LINE 
+    border-right: 1px solid rgba(0, 77, 89, 0.4);
+    box-shadow: -1px 0 0px rgba(255, 255, 255, 0.2) inset;
+    */
+    
+    /* INNER SHADOW */
+    box-shadow: 0px 10px 10px rgba(0, 77, 89, 0.2) inset;
+    
+}
+
+.content-container {
+
+}
+
+/*
+-----------------------------------------------------------------------------
+MAIN SIDE MENU
+-----------------------------------------------------------------------------
+*/
+
+.main-menu-buttons, .main-menu-dark {
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px -1px 0px rgba(0, 77, 89, 0.3) inset;
+    display: block; 
+    vertical-align: middle;
+       
+    background-color: rgba(4, 143,153,1);
+}
+
+.main-menu-buttons:hover {
+    background-color: rgba(0,77,89,0.2);
+}
+
+.main-menu-dark:hover {
+    background-color: rgba(18,70,80,1);   
+}
+
+.main-menu-buttons span, .main-menu-dark span, .about {
+    font-family: 'geometriamedium';
+    text-align: center;
+    font-size: 0.77em;
+    line-height: 1.2;
+    color: white;
+    width: 100%;
+    display: inline-block;
+    margin-top: 77px;
+}
+
+.main-menu-buttons-position {
+    bottom: 40px;
+    position: absolute;
+    width: 100%;
+}
+
+.logo {
+    background: rgba(0,77,89,1) url("../img/icons-white/logo.svg") no-repeat center center;
+    background-size: 100%;
+}
+
+.filters {
+    background: url("../img/icons-white/filters.svg") no-repeat center -10px;
+}
+
+.latest-search {
+    background: url("../img/icons-white/latest-search.svg") no-repeat center -15px;
+}
+
+.map {
+    background: rgba(0,77,89,1) url("../img/icons-white/map.svg") no-repeat center -15px;
+}
+
+.about {
+    margin-top: 15px !important;
+    font-size: 0.750em;
+    color: rgba(255,255,255,1);
+    text-shadow: 0 0 0 rgba(255,255,255,0.8);
+    
+    transition: text-shadow 0.2s ease-out;
+}
+
+.about:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.8)
+}
+
+/*
+-----------------------------------------------------------------------------
+TOOLBAR TOP
+-----------------------------------------------------------------------------
+*/
+
+.search-box {
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    background-color: rgba(237, 237, 237,0.98);
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 3px;
+    position: fixed;
+    z-index: 9997;
+    margin-left: -2px;
+}
+
+.search-box form input {
+    width: 90%;
+    height: 80px;
+    font-size: 2.500em;
+    backgrond-color: transparent;
+    padding-left: 80px;
+    border: none;
+    background: url("../img/icons-dark/search.svg") no-repeat left center;
+    color: rgba(0,77,89,1);
+    font-family: 'adelle_ltlight';
+}
+
+.search-box form input:focus {
+    border: none;
+}
+
+.applied-filters {
+    width: 100%;
+    min-height: 40px;
+    background-color: rgba(237, 237, 237,0.9);
+    border-right: 1px solid rgba(0,0,0,0.06);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    border-left: 1px solid rgba(0,0,0,0.06);
+    border-radius: 0 0 3px 3px;
+    z-index: 9997;
+    position: absolute;
+    margin-top: -1px;
+    
+    display: none;
+}
+
+.applied-filters span {
+    width: 40px;
+    height: 40px;
+    float: left;
+    display: inline-block;
+    background: url("../img/icons-dark/filters.svg") no-repeat center center;
+    background-size: 100%;
+    margin-left: 20px;
+}
+
+.applied-filters ul {
+    margin-top: 12px;
+    margin-left: 80px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+}
+
+.applied-filters li {
+    display: inline;
+    color: rgba(93,93,93,1);
+    font-size: 0.80em;
+    font-family: 'geometriabold';
+}
+
+.applied-filters li::after {
+    content: ", ";   
+}
+
+.applied-filters li:last-child::before {
+    content: "";   
+}
+
+.applied-filters li:last-child::after {
+    content: "";   
+}
+
+.applied-filters ul:first-child:first-letter {
+    text-transform: capitalize;   
+}
+
+.user-tools {
+    height: 80px;
+    position: fixed;
+    z-index: 9996;
+    margin-top: 30px;
+}
+
+.profile-picture, .notifications {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255,255,255,0.6) !important;
+    float: left;
+    border-radius: 50%;
+    margin: 10px 0 0 0;
+    margin-left: 10px;
+    border: 2px solid rgba(0,0,0,0.1);
+}
+
+.profile-picture:hover, .notifications:hover {
+    background-color: rgba(255,255,255,0.9) !important;
+}
+
+.profile-picture {
+    background: url("../img/icons-dark/user.svg") no-repeat center center;
+    background-size: 160%;
+}
+
+.profile-picture:hover {
+    background: url("../img/icons-green/user.svg") no-repeat center center;
+    background-size: 160%;
+}
+
+.notifications {
+    background: url("../img/icons-dark/notifications.svg") no-repeat center center;
+    background-size: 160%;
+}
+
+.notifications:hover {
+     background: url("../img/icons-green/notifications.svg") no-repeat center center;
+    background-size: 160%;
+}
+
+/*
+-----------------------------------------------------------------------------
+FILTERS in EXPLORA
+-----------------------------------------------------------------------------
+*/
+
+.filters-explore {
+    background-color: rgba(255,255,255,0.97);
+    padding: 20px;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-radius: 4px;
+    position: fixed;
+    margin-left: -17px;
+    margin-top: 119px;
+    z-index:9996;
+    overflow-y: auto;
+    height: 590px;
+    
+    display: none;
+    
+}
+
+.filters-explore h3 {
+    width: 100%;
+    height: 60px;
+    font-family: 'adelle_sbsemibold';
+    font-size: 1.125em;
+    text-align: left;
+    line-height: 3.5;
+    color: rgba(0,77,89,1);
+    border-top: 1px solid rgba(0,77,89,0.5);
+    
+    display:inline-block;
+    white-space: nowrap;
+    overflow:hidden !important;
+    text-overflow: ellipsis;
+    
+}
+
+#accordion::first-child {
+    border-top: none;
+}
+
+.filters-explore form {
+    font-family: 'geometriaregular';
+    font-size: 1em;
+    color: rgba(76,76,76,1);
+    line-height: 2;
+    margin: 0px 0 20px;
+    
+}
+
+.filters-explore form label {
+    display: inline !important;
+    margin-left: 15px;
+    font-family: 'geometriaregular';
+    font-size: 0.9em;
+}
+
+
+.formatos-contenido input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    padding: 3px;
+    background-color: white;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ie-appearance: none;
+    vertical-align: middle;
+    cursor: pointer;
+    margin:-2px;
+}
+
+.formatos-contenido input[type=checkbox]:checked {
+    width: 18px;
+    height: 18px;
+    margin:-2px;
+}
+
+.content-checkbox-image {border:2px solid #ad3718 !important;}
+.content-checkbox-image:checked {background-color:#ad3718 !important;}
+.content-checkbox-video {border:2px solid #e2b708 !important;}
+.content-checkbox-video:checked {background-color: #e2b708 !important;}
+.content-checkbox-audio {border:2px solid #5596c4 !important;}
+.content-checkbox-audio:checked {background-color: #5596c4 !important;}
+.content-checkbox-text {border:2px solid #4c4c4c !important;}
+.content-checkbox-text:checked {background-color: #4c4c4c !important;}
+
+
+.tab-expandibles {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(255,255,255,1);
+    transform: rotate(45deg);
+    position: fixed;
+    left: -12px;
+    top: 45px;
+    z-index: 9996;
+}
+
+.icon-open-accordion {
+    background: url("../img/icons-dark/plus.svg") no-repeat center center;
+    width: 20px;
+    height: 20px;
+    float: right;
+    background-size: 300%;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.icon-close-accordion {
+    background: url("../img/icons-dark/less.svg") no-repeat center center;
+    width: 20px;
+    height: 20px;
+    float: right;
+    background-size: 300%;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+/*
+-----------------------------------------------------------------------------
+RECENTS in EXPLORA
+-----------------------------------------------------------------------------
+*/
+
+.recents-explore {
+    background-color: rgba(255,255,255,0.97);
+    padding: 20px;
+    position: fixed;
+    margin-left: -17px;
+    margin-top: 119px;
+    z-index:9996;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow-y: auto;
+    height: 490px;
+    
+    display: none;
+}
+
+.recents-explore h3 {
+    width: 100%;
+    height: 60px;
+    font-family: 'adelle_sbsemibold';
+    font-size: 1.125em;
+    text-align: left;
+    line-height: 3.5;
+    color: rgba(0,77,89,1);
+    border-top: 1px solid rgba(0,77,89,0.5);
+    padding-left: 35px;
+    background: url("../img/icons-dark/folder.svg") no-repeat -18px center;
+    
+    display:inline-block;
+    white-space: nowrap;
+    overflow:hidden !important;
+    text-overflow: ellipsis;
+    
+}
+
+.tab-expandibles-recientes {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(255,255,255,1);
+    transform: rotate(45deg);
+    position: fixed;
+    left: -12px;
+    top: 165px;
+    z-index: 9996;
+}
+
+.recent h4 {
+    font-family: 'adelle_rgbold';
+    font-size: 1.125em;
+    color: rgba(0,0,0,1);
+    line-height:1.5;
+    margin: 7px 0 7px 0;
+}
+
+.tags-small-list {
+    font-size: 0.875em;
+    font-family: 'adelle_rgregular';
+    margin: 10px 10px 10px 0;
+    cursor: pointer;
+}
+
+.tags-small-list li {
+    background-color: transparent;
+    background: url("../img/icons-dark/tag.svg") no-repeat left center;
+    border: 1px solid rgba(0,77,89,1);
+    color: rgba(0,77,89,1);
+    line-height: 1.2;
+    border-radius: 2px;
+    transition: background-color 0.2s ease-out;
+    padding: 5px 6px 5px 25px;
+    display: inline-block;
+    margin: 7px 5px 0 0;
+    
+    transition: background-color 0.2s ease-out;
+}
+
+.tags-small-list li:hover {
+    background: url("../img/icons-white/tag.svg") no-repeat left center;
+    background-color: rgba(0,77,89,1);    
+    color: white;
+}
+
+
+/*
+-----------------------------------------------------------------------------
+PROJECT BOX in EXPLORA
+-----------------------------------------------------------------------------
+*/
+
+.project-box-explore {
+    background-color: rgba(255,255,255,0.8);
+    margin-top: 20px;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid rgba(0,0,0,0.1);
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    cursor: pointer;
+    position:relative;
+    
+    transition: border 0.1s ease-out;
+}
+
+.project-box-explore:hover {
+    border: 1px solid rgba(0,0,0,0.25);
+}
+
+.content-color {
+    width: 100%;
+    height: 6px;
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0px -1px 0px rgba(255,255,255,0.1) inset;
+}
+
+.content-image {background-color:#ad3718 !important;}
+.content-video {background-color: #e2b708 !important;}
+.content-audio {background-color: #5596c4 !important;}
+.content-text {background-color: #4c4c4c !important;}
+
+.project-box-explore-image {
+    width: 100%;
+    position: relative;
+}
+
+.image-filters {
+    position: absolute;
+    z-index:0;
+    width: 100%;
+    height: 98.8%;
+    top:0;
+    bottom:0;
+    
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjQiLz4KICAgIDxzdG9wIG9mZnNldD0iMTUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 10%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.4)), color-stop(12%,rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 10%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 10%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 10%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 10%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ffffff', endColorstr='#00ffffff',GradientType=0 );
+    
+    box-shadow: 0px -40px 20px -6px rgba(0, 0, 0, 0.5) inset;
+}
+
+.height-fix-filter {
+    height: 98.8% !important;
+}
+
+.box-hover {
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.5);
+    display:none;
+}
+
+.box-hover div {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+    background: rgba(0,77,89,1) url("../img/icons-white/plus-box.svg") no-repeat center center;
+    background-size: 125%;
+    
+    transition: background 0.1s ease-out;
+}
+
+.box-hover div:hover {
+    background: rgba(4, 143,153,1) url("../img/icons-white/plus-box.svg") no-repeat center center;
+    background-size: 125%;
+}
+
+.project-box-explore-image img {
+    width: 100%;
+    z-index:-1;
+}
+
+.counter-project-box-explore {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    z-index:1;
+}
+
+.counter-project-box-explore li {
+    display:inline-block;
+    margin: 0px 4px 0 8px;
+}
+
+.counter-project-box-explore li p {
+    color: rgba(255,255,255,1);
+    font-size: 0.875em;
+    font-family: 'geometriabold';
+    text-align: right;
+    float: left;
+    margin:0;
+}
+
+.love-count {
+    background: url("../img/icons-white/heart.svg") no-repeat center center;
+    background-size: 250%;
+    
+    width: 15px;
+    display: block;
+    float: left;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.collected-count {
+    background: url("../img/icons-white/add-project.svg") no-repeat center center;
+    background-size: 325%;
+    
+    width: 15px;
+    display: block;
+    float: left;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.project-box-explore-title {
+    padding: 20px;
+}
+
+.project-box-explore h2 {
+    font-size: 1.6em;
+    line-height:1.1;
+    color: rgb(70, 70, 70);
+    font-family: 'adelle_rgbold'; 
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.categories-project-box-explore {
+    padding: 0;  
+    margin: 0;
+}
+
+.categories-project-box-explore li {
+    display: inline-flex;
+    line-height:1.2;
+    list-style-type: none;
+    vertical-align: bottom;
+    font-family: 'geometriamedium';
+    color: rgb(204, 102, 0);
+    font-size: 0.85em;
+    
+}
+
+.categories-project-box-explore li::after {
+    content: ", ";   
+}
+
+.categories-project-box-explore li:last-child::before {
+    content: "";   
+}
+
+.categories-project-box-explore li:last-child::after {
+    content: "";   
+}
+
+.project-box-explore p {
+    font-family: 'geometriaregular';
+    text-align: left;
+    font-size: 0.9em;
+    line-height:1.6;
+    color: rgba(76,76,76,1);
+    margin: 20px 0 0 0;
+}
+
+/*
+-----------------------------------------------------------------------------
+BUTTONS
+-----------------------------------------------------------------------------
+*/
+
+.button-wide {
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+.button {
+    padding: 10px 0;
+    color: white;
+    display: block;
+    border-radius: 5px;
+    text-align:center;
+    font-size: 1.1em;
+    font-family: 'adelle_sbsemibold';
+    cursor: pointer;
+}
+
+/* BUTTON BACKGROUND GREEN */
+.btn-green {background-color: rgba(4, 143,153,1);}
+.btn-green:hover {background-color: rgba(0,77,89,1);}
+
+/* BUTTON BACKGROUND ORANGE */
+.btn-orange {background-color: rgba(255,169,0,1);}
+.btn-orange:hover {background-color: rgba(204,102,0,1);}
+
+/* BUTTON GRAY - HOVER GREEN */
+.btn-gray-green {color: rgba(149,149,149,1);}
+.btn-gray-green:hover {color: rgba(4,143,153,1);}
+
+/* BUTTON GRAY - HOVER PRANGE */
+.btn-gray-orange {color: rgba(149,149,149,1);}
+.btn-gray-orange:hover {color: rgba(204,102,0,1);}
+
+.close {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url("../img/icons-white/close.svg") no-repeat center center;
+    background-size: 100%;
+    background-color: rgba(4, 143,153,1);
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 9999;
+    
+    position: fixed;
+    right: 75px;
+    top: 25px;
+}
+
+.close:hover {
+    background-color: rgba(0,77,89,1);
+}
+
+/*
+-----------------------------------------------------------------------------
+PROJECT BOX in PREVIEW
+-----------------------------------------------------------------------------
+*/
+
+.project-box-explore-preview {
+    left: 0px;
+    right: 0px;
+    top: 65px;
+    position: absolute;
+    margin: auto;
+    border:none;
+    z-index: 9999;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    float: left;
+}
+
+.project-box-explore-preview:hover {
+    border:none;
+}
+
+.love {
+    width: 60px;
+    height: 60px;
+    margin: 50px 10px;
+    position: absolute;
+    background: rgba(4, 143,153,1) url("../img/icons-white/heart.svg") no-repeat center center;
+    background-size: 140%;
+    cursor:pointer;
+}
+
+.add-project {
+    width: 60px;
+    height: 60px;
+    margin: 130px 10px;
+    position: absolute;
+    background: rgba(4, 143,153,1) url("../img/icons-white/add-project.svg") no-repeat center center;
+    background-size: 150%;
+    cursor:pointer;
+}
+
+.white-screen {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.75);
+    position: fixed;
+    top:0;
+    margin:0;
+    display:block;
+    z-index:9998;
+    overflow: hidden;
+    padding:2%;
+    box-sizing: border-box;
+    display:none;
+}
+
+.blur-screen {
+    filter: blur(7px);
+    -moz-filter: blur(7px);
+    -webkit-filter: blur(7px);
+    -ie-filter: blur(7px);
+    -o-filter: blur(7px);
+}
+
+
+/*
+-----------------------------------------------------------------------------
+SEARCH OPEN
+-----------------------------------------------------------------------------
+*/
+
+.search-lightbox {
+    
+}
+
+.search-icon {
+    background: url("../img/icons-dark/search.svg") no-repeat center center;
+    height: 80px;
+    margin-top: 30px;
+    float: left;
+    background-size: 170%;
+}
+
+.search-lightbox form {
+    
+}
+
+.search-lightbox form input {
+    height: 140px;
+    font-size: 6.250em;
+    background: none;
+    border: none;
+    color: rgba(0,77,89,1);
+    font-family: 'adelle_ltlight';
+    float: left;
+}
+
+.tags ul {
+    margin: 20px 0 0 0;
+}
+
+.tags ul li {
+    padding: 5px;
+    font-size: 1.1em;
+    font-family: 'adelle_rgregular';
+    display: inline-block;
+    margin: 15px 10px 0 0;
+    padding: 8px 10px 8px 30px;
+    cursor: pointer;
+    border-radius: 2px;
+    
+}
+
+.search-recents {
+    
+}
+
+.search-recents ul {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: inline-block
+}
+
+.search-recents ul li {
+    background-color: transparent;
+    background: url("../img/icons-dark/tag.svg") no-repeat left center;
+    border: 2px solid rgba(0,77,89,1);
+    color: rgba(0,77,89,1);
+    line-height: 1.2;
+    
+    transition: background-color 0.2s ease-out;
+}
+
+.search-recents ul li:hover {
+    background: url("../img/icons-white/tag.svg") no-repeat left center;
+    background-color: rgba(0,77,89,1);    
+    color: white;
+}
+
+.search-recents ul li a {
+    background: url("../img/icons-white/close.svg") no-repeat center center;
+    background-color: rgba(149,149,149,0.7);
+    border-radius:50%;
+    background-size: 180%;
+    width: 20px;
+    height: 20px;
+    float:right;
+    margin: 0 0 0 10px;
+}
+
+.search-suggestions {
+    border-top: 1px solid rgba(149,149,149,0.4);
+}
+
+.search-suggestions ul {
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.search-suggestions ul li {
+    background-color: transparent;
+    background: url("../img/icons-green/tag.svg") no-repeat left center;
+    border: 2px solid rgba(4, 143,153,1);
+    color: rgba(4, 143,153,1);
+    
+    transition: background-color 0.2s ease-out;
+}
+
+.search-suggestions ul li:hover {
+    background: url("../img/icons-white/tag.svg") no-repeat left center;
+    background-color: rgba(4, 143,153,1);
+    color: white;
+}
+
+.search-suggestions ul li:last-child {
+    background: rgba(4, 143,153,1) url("../img/icons-white/plus-box.svg") no-repeat center center;
+    color: white;
+    padding:8px 10px;
+}
+
+.search-suggestions ul li:last-child:hover {
+    background: rgba(0,77,89,1) url("../img/icons-white/plus-box.svg") no-repeat center center;
+    border: 2px solid rgba(0,77,89,1);
+}
+
+/*
+-----------------------------------------------------------------------------
+FIXES MEDIA QUERIES
+-----------------------------------------------------------------------------
+*/
+
+@media screen and (min-width:769px) {
+/*
+.profile-picture, .notifications {
+    float: right;
+
+}
+*/
+
+
+
+
+

@@ -1,0 +1,244 @@
+/*
+	Variable Grid System (Fluid Version).
+	Learn more ~ http://www.spry-soft.com/grids/
+	Based on 960 Grid System - http://960.gs/ & 960 Fluid - http://www.designinfluences.com/
+
+	Licensed under GPL and MIT.
+*/
+
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_7 {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 1%;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1_b,
+.grid_2_b,
+.grid_3_b,
+.grid_4_b,
+.grid_5_b,
+.grid_6_b{
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 0;
+	margin-right: 1%;
+}
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
+}
+
+/* Grid >> 7 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_7 .grid_1_b {
+	width:12.333008%;
+}
+
+.container_7 .grid_2_b {
+	width:26.619141%;
+}
+
+.container_7 .grid_3_b {
+	width:40.905273%;
+}
+
+.container_7 .grid_4_b {
+	width:55.191406%;
+}
+
+.container_7 .grid_5_b {
+	width:69.476074%;
+}
+
+.container_7 .grid_6_b {
+	width:83.762207%;
+}
+
+.container_7 .grid_7_b {
+	width:100%;
+}
+
+
+
+/* Prefix Extra Space >> 7 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_7 .prefix_1_b {
+	padding-left:14.286%;
+}
+
+.container_7 .prefix_2_b {
+	padding-left:28.571%;
+}
+
+.container_7 .prefix_3_b {
+	padding-left:42.857%;
+}
+
+.container_7 .prefix_4_b {
+	padding-left:57.143%;
+}
+
+.container_7 .prefix_5_b {
+	padding-left:71.429%;
+}
+
+.container_7 .prefix_6_b {
+	padding-left:85.714%;
+}
+
+
+
+/* Suffix Extra Space >> 7 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_7 .suffix_1_b {
+	padding-right:14.286%;
+}
+
+.container_7 .suffix_2_b {
+	padding-right:28.571%;
+}
+
+.container_7 .suffix_3_b {
+	padding-right:42.857%;
+}
+
+.container_7 .suffix_4_b {
+	padding-right:57.143%;
+}
+
+.container_7 .suffix_5_b {
+	padding-right:71.429%;
+}
+
+.container_7 .suffix_6_b {
+	padding-right:85.714%;
+}
+
+
+
+/* Push Space >> 7 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_7 .push_1_b {
+	left:14.286%;
+}
+
+.container_7 .push_2_b {
+	left:28.571%;
+}
+
+.container_7 .push_3_b {
+	left:42.857%;
+}
+
+.container_7 .push_4_b {
+	left:57.143%;
+}
+
+.container_7 .push_5_b {
+	left:71.429%;
+}
+
+.container_7 .push_6_b {
+	left:85.714%;
+}
+
+
+
+/* Pull Space >> 7 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_7 .pull_1_b {
+	left:-14.286%;
+}
+
+.container_7 .pull_2_b {
+	left:-28.571%;
+}
+
+.container_7 .pull_3_b {
+	left:-42.857%;
+}
+
+.container_7 .pull_4_b {
+	left:-57.143%;
+}
+
+.container_7 .pull_5_b {
+	left:-71.429%;
+}
+
+.container_7 .pull_6_b {
+	left:-85.714%;
+}
+
+
+
+
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
