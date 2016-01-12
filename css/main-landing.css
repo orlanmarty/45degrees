@@ -55,12 +55,12 @@ body {
 	padding: 12px 30px;
 	background: #508d97;
 	margin-top: 30px;
-	right: 100px;
 	border-radius: 5px;
 	font-weight: bolder;
 	font-size: 1.17em;
 	font-family: 'adelle_rgbold';
 	transition: all .2s;
+	right: 1.5em;
 }
 
 .signin a:hover{
@@ -70,10 +70,10 @@ body {
 /*-----  Section 1 VIDEO  -----*/
 
 .page-1 {
-	background: url('../img/landing/video_background.png') center center;
-    background-repeat: no-repeat;
+	background: url('../img/landing/video_background.png') 50% 100%;
+  background-repeat: no-repeat;
 	text-align: center;
-    background-size: 100%;
+  background-size: cover;
 }
 
 .page-1 h1 {
@@ -101,11 +101,10 @@ body {
 .page-1 .cont-arrow {
 	background: url('../img/landing/cont-arrow.png') no-repeat center center;
 	width: 54px;
+	bottom: 30px;
+	position: absolute;
+	display: inline;
 	height: 29px;
-	margin-left:auto;
-	margin-right:auto;
-	bottom: 0;
-	position: relative;
 }
 
 /*-----  Section 2 NIÑOS  -----*/
@@ -113,8 +112,8 @@ body {
 .page-2 {
 	background: url('../img/landing/kids-bg.png') no-repeat center center;
 	text-align: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .page-2 h1 {
@@ -149,7 +148,7 @@ body {
 .page-3 {
 	background: url('../img/landing/arquitecto1-bg.png') no-repeat center center;
 	text-align: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -180,8 +179,8 @@ body {
 
 .page-4 {
 	background: url('../img/landing/encuentra-bg.png') no-repeat center center;
-    background-size: 100%;
-        background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .page-4 h1 {
@@ -220,8 +219,8 @@ body {
 
 .page-5 {
 	background: url('../img/landing/colecciona-bg.png') no-repeat center 25%;
-    background-size: 100%;
-        background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .page-5 h1 {
@@ -230,7 +229,7 @@ body {
 	margin-bottom: 10px;
 	font-family: 'adelle_rgbold';
 	color: #004d59;
-	
+
 }
 
 .page-5 h2,
@@ -267,7 +266,7 @@ body {
 
 .page-6 {
 	background: url('../img/landing/inspirate-bg.png') no-repeat center center;
-    background-size: 100%;
+    background-size: cover;
         background-repeat: no-repeat;
 }
 
@@ -309,8 +308,8 @@ body {
 .page-7 {
 	background: url('../img/landing/closing-bg.png') no-repeat center center;
 	text-align: center;
-    background-size: 100%;
-        background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 
 }
 
@@ -377,7 +376,7 @@ body {
 	list-style-type: none;
 	display: inline-block;
 	float: left;
-	margin-right: 15px;	
+	margin-right: 15px;
 	height: 20px;
 }
 
@@ -423,11 +422,11 @@ body {
 
 
 .signin-box img{
+	z-index: 9999;
+	max-width: 100%;
+	margin: 0 auto;
+	display: inline;
+	position: absolute;
 	left: 0;
 	right: 0;
-	margin: 0 auto;
-	position: absolute;
-	z-index: 9999;
-
 }
-
