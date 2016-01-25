@@ -116,6 +116,22 @@ body {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 800px) {
+  .page-2 {
+    background: url('../img/landing/kids-md-bg.png') no-repeat 50% 100%;
+    text-align: center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 500px) {
+  .page-2 {
+    background: url('../img/landing/kids-sm-bg.png') no-repeat 50% 100%;
+    text-align: center;
+    background-size: cover;
+  }
+}
+
 .page-2 h1 {
 	font-size: 2.2em;
 	margin-top: 160px;
@@ -152,6 +168,22 @@ body {
     background-repeat: no-repeat;
 }
 
+@media (max-width: 800px) {
+  .page-3 {
+    background: url('../img/landing/arquitecto1-md-bg.png') no-repeat 50% 100%;
+    text-align: center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 500px) {
+  .page-3 {
+    background: url('../img/landing/arquitecto1-sm-bg.png') no-repeat 50% 100%;
+    text-align: center;
+    background-size: cover;
+  }
+}
+
 .page-3 img {
 	margin: 140px auto 0px auto;
 	display: block;
@@ -181,6 +213,22 @@ body {
 	background: url('../img/landing/encuentra-bg.png') no-repeat center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 800px) {
+  .page-4 {
+    background: url('../img/landing/encuentra-md-bg.png') no-repeat 50% 100%;
+    text-align: center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 500px) {
+  .page-4 {
+    background: url('../img/landing/encuentra-sm-bg.png') no-repeat 50% 100%;
+    text-align: center;
+    background-size: cover;
+  }
 }
 
 .page-4 h1 {
@@ -221,6 +269,22 @@ body {
 	background: url('../img/landing/colecciona-bg.png') no-repeat center 25%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 800px) {
+  .page-5 {
+    background: url('../img/landing/colecciona-md-bg.png') no-repeat 50% 100%;
+    text-align: center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 500px) {
+  .page-5 {
+    background: url('../img/landing/colecciona-sm-bg.png') no-repeat 50% 100%;
+    text-align: center;
+    background-size: cover;
+  }
 }
 
 .page-5 h1 {
@@ -270,6 +334,22 @@ body {
         background-repeat: no-repeat;
 }
 
+@media (max-width: 800px) {
+  .page-6 {
+    background: url('../img/landing/colecciona-md-bg.png') no-repeat 50% 100%;
+    text-align: center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 500px) {
+  .page-6 {
+    background: url('../img/landing/colecciona-sm-bg.png') no-repeat 50% 100%;
+    text-align: center;
+    background-size: cover;
+  }
+}
+
 .page-6 h1 {
 	font-size: 2.4em;
 	margin-top: 170px;
@@ -310,7 +390,22 @@ body {
 	text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
 
+@media (max-width: 800px) {
+  .page-7 {
+    background: url('../img/landing/closing-md-bg.png') no-repeat 50% 100%;
+    text-align: center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 500px) {
+  .page-7 {
+    background: url('../img/landing/closing-sm-bg.png') no-repeat 50% 100%;
+    text-align: center;
+    background-size: cover;
+  }
 }
 
 .page-7 img {
