@@ -279,7 +279,7 @@ TOOLBAR TOP
     width: 90%;
     height: 80px;
     font-size: 2.500em;
-    backgrond-color: transparent;
+    background-color: transparent;
     padding-left: 80px;
     border: none;
     background: url("../img/icons-dark/search.svg") no-repeat left center;
@@ -823,6 +823,28 @@ BUTTONS
     cursor: pointer;
 }
 
+#button-love {
+    padding: 10px 0;
+    color: white;
+    display: block;
+    border-radius: 5px;
+    text-align:center;
+    font-size: 1.1em;
+    font-family: 'adelle_sbsemibold';
+    cursor: pointer;
+}
+
+#button-addproject {
+    padding: 10px 0;
+    color: white;
+    display: block;
+    border-radius: 5px;
+    text-align:center;
+    font-size: 1.1em;
+    font-family: 'adelle_sbsemibold';
+    cursor: pointer;
+}
+
 /* BUTTON BACKGROUND GREEN */
 .btn-green {background-color: rgba(4, 143,153,1);}
 .btn-green:hover {background-color: rgba(0,77,89,1);}
@@ -891,6 +913,15 @@ PROJECT BOX in PREVIEW
     cursor:pointer;
 }
 
+.plus1 {
+    width: 60px;
+    height: 60px;
+    margin: 50px 10px;
+    position: absolute;
+    background: rgba(0,77,89,1) url("../img/icons-white/plus1.svg") no-repeat center center;
+    background-size: 30%;
+}
+
 .add-project {
     width: 60px;
     height: 60px;
@@ -900,6 +931,27 @@ PROJECT BOX in PREVIEW
     background-size: 150%;
     cursor:pointer;
 }
+
+.add-options {
+    width: 60px;
+    height: 60px;
+    margin: 130px 10px;
+    position: absolute;
+    background: rgba(0,77,89,1) url("../img/icons-white/add-project.svg") no-repeat center center;
+    background-size: 150%;
+    cursor:pointer;
+}
+
+.add-options::after {
+    width: 266px;
+    height: 373px;
+    position: relative;
+    background-image: url("../img/collect-explora.png") no-repeat center center;
+    background-size: 100%;
+    cursor:pointer;
+}
+
+
 
 .white-screen {
     width: 100%;
@@ -922,6 +974,41 @@ PROJECT BOX in PREVIEW
     -webkit-filter: blur(7px);
     -ie-filter: blur(7px);
     -o-filter: blur(7px);
+}
+
+
+/*
+-----------------------------------------------------------------------------
+TOOGLE COLECCIONAR
+-----------------------------------------------------------------------------
+*/
+
+.toggle-coleccionar1 {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top:0;
+    margin:0;
+    display:block;
+    z-index:9998;
+    overflow: hidden;
+    padding:2%;
+    box-sizing: border-box;
+    display:none;
+}
+
+.toggle-coleccionar2 {
+    width: 1200px;
+    height: 1200px;
+    position: fixed;
+    top:0;
+    margin:0;
+    display:block;
+    z-index:9998;
+    overflow: hidden;
+    padding:2%;
+    box-sizing: border-box;
+    display:none;
 }
 
 

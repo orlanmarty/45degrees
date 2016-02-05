@@ -63,8 +63,39 @@ EXPLORA
         $(".close").click(function(){
             $("#popup").fadeOut(300);
             $(".main-container").removeClass("blur-screen");
-            
         });
+
+        /* BUTTON LOVE */
+        $("#button-love").click(function(){
+            $(".love").addClass("pulse");
+        });
+
+        document.getElementById("button-love").addEventListener("click", function (e) {
+         var target = e.target;
+
+            target.classList.toggle("love");
+            target.classList.toggle("plus1");
+        }, false);
+
+        
+        /* COLECCIONAR PROJECT */
+
+        
+
+        $("#button-addproject").click(function(){
+            $(".add-project").addClass("pulse");
+        });
+
+        document.getElementById("button-addproject").addEventListener("click", function (e) {
+         var target = e.target;
+
+            target.classList.toggle("add-project");
+            target.classList.toggle("add-options");
+        }, false);
+
+        
+
+
         
         /* LIGHTBOX SEARCH */
         
